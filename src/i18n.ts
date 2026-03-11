@@ -1,0 +1,129 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+const resources = {
+  ar: {
+    translation: {
+      "dashboard": "لوحة التحكم",
+      "trips": "الرحلات",
+      "pilgrims": "المعتمرين",
+      "agents": "المناديب",
+      "flights": "الطيران",
+      "reports": "التقارير",
+      "search": "بحث",
+      "settings": "الإعدادات",
+      "total_trips": "إجمالي الرحلات",
+      "total_pilgrims": "إجمالي المعتمرين",
+      "total_agents": "إجمالي المناديب",
+      "completed_trips": "رحلات مكتملة",
+      "incomplete_trips": "رحلات ناقصة",
+      "add_trip": "إضافة رحلة",
+      "trip_name": "اسم الرحلة",
+      "month_gregorian": "الشهر الميلادي",
+      "month_hijri": "الشهر الهجري",
+      "notes": "ملاحظات",
+      "save": "حفظ",
+      "cancel": "إلغاء",
+      "full_name": "الاسم الكامل",
+      "agent": "المندوب",
+      "passport_type": "نوع الجواز",
+      "physical_passport": "جلد",
+      "whatsapp_image": "صورة واتساب",
+      "passport_exists": "صورة الجواز موجودة",
+      "data_complete": "البيانات مكتملة",
+      "add_pilgrim": "إضافة معتمر",
+      "add_agent": "إضافة مندوب",
+      "add_flight": "إضافة طيران",
+      "flight_raw_text": "نص الرحلة الجوية",
+      "airline": "شركة الطيران",
+      "flight_number": "رقم الرحلة",
+      "route": "المسار",
+      "departure": "الإقلاع",
+      "arrival": "الوصول",
+      "reference_code": "Reference Code",
+      "search_placeholder": "ابحث بالاسم...",
+      "company_name": "شركة مايوركا للسياحة",
+      "report_title": "كشف معتمري الرحلة",
+      "export_word": "تصدير Word",
+      "export_excel": "تصدير Excel",
+      "print": "طباعة",
+      "men": "رجال",
+      "women": "نساء",
+      "children": "أطفال",
+      "infants": "رضع",
+      "visa_status": "حالة التأشيرة",
+      "barcode_status": "حالة الباركود",
+      "flight_status": "حالة الطيران",
+      "id_status": "حالة الهويات"
+    }
+  },
+  en: {
+    translation: {
+      "dashboard": "Dashboard",
+      "trips": "Trips",
+      "pilgrims": "Pilgrims",
+      "agents": "Agents",
+      "flights": "Flights",
+      "reports": "Reports",
+      "search": "Search",
+      "settings": "Settings",
+      "total_trips": "Total Trips",
+      "total_pilgrims": "Total Pilgrims",
+      "total_agents": "Total Agents",
+      "completed_trips": "Completed Trips",
+      "incomplete_trips": "Incomplete Trips",
+      "add_trip": "Add Trip",
+      "trip_name": "Trip Name",
+      "month_gregorian": "Gregorian Month",
+      "month_hijri": "Hijri Month",
+      "notes": "Notes",
+      "save": "Save",
+      "cancel": "Cancel",
+      "full_name": "Full Name",
+      "agent": "Agent",
+      "passport_type": "Passport Type",
+      "physical_passport": "Physical",
+      "whatsapp_image": "WhatsApp",
+      "passport_exists": "Passport Exists",
+      "data_complete": "Data Complete",
+      "add_pilgrim": "Add Pilgrim",
+      "add_agent": "Add Agent",
+      "add_flight": "Add Flight",
+      "flight_raw_text": "Flight Raw Text",
+      "airline": "Airline",
+      "flight_number": "Flight Number",
+      "route": "Route",
+      "departure": "Departure",
+      "arrival": "Arrival",
+      "reference_code": "Reference Code",
+      "search_placeholder": "Search by name...",
+      "company_name": "Mayorca Travel",
+      "report_title": "Trip Pilgrims List",
+      "export_word": "Export Word",
+      "export_excel": "Export Excel",
+      "print": "Print",
+      "men": "Men",
+      "women": "Women",
+      "children": "Children",
+      "infants": "Infants",
+      "visa_status": "Visa Status",
+      "barcode_status": "Barcode Status",
+      "flight_status": "Flight Status",
+      "id_status": "ID Status"
+    }
+  }
+};
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'ar',
+    interpolation: {
+      escapeValue: false
+    }
+  });
+
+export default i18n;
