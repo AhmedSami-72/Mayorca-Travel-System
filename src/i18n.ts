@@ -55,7 +55,19 @@ const resources = {
       "visa_status": "حالة التأشيرة",
       "barcode_status": "حالة الباركود",
       "flight_status": "حالة الطيران",
-      "id_status": "حالة الهويات"
+      "id_status": "حالة الهويات",
+      "supervisor": "المشرف",
+      "supervisor1": "المشرف الأول",
+      "supervisor2": "المشرف الثاني",
+      "phone": "رقم الهاتف",
+      "visa_type": "نوع التأشيرة",
+      "room_type": "نوع الغرفة",
+      "room_id": "رقم الغرفة",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "pilgrim_added_success": "تم إضافة المعتمر بنجاح",
+      "pilgrim_updated_success": "تم تحديث بيانات المعتمر",
+      "pilgrim_deleted_success": "تم حذف المعتمر"
     }
   },
   en: {
@@ -110,10 +122,23 @@ const resources = {
       "visa_status": "Visa Status",
       "barcode_status": "Barcode Status",
       "flight_status": "Flight Status",
-      "id_status": "ID Status"
+      "id_status": "ID Status",
+      "supervisor": "Supervisor",
+      "supervisor1": "Supervisor 1",
+      "supervisor2": "Supervisor 2",
+      "phone": "Phone",
+      "visa_type": "Visa Type",
+      "room_type": "Room Type",
+      "room_id": "Room ID",
+      "edit": "Edit",
+      "delete": "Delete",
+      "pilgrim_added_success": "Pilgrim added successfully",
+      "pilgrim_updated_success": "Pilgrim data updated",
+      "pilgrim_deleted_success": "Pilgrim deleted"
     }
   }
-};
+}
+;
 
 i18n
   .use(LanguageDetector)
