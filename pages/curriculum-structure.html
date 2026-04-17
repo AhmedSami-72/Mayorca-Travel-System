@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Structure - UTM Clone</title>
+    <link rel="stylesheet" href="../css/student-portal.css">
+    <link rel="stylesheet" href="../css/curriculum.css">
+</head>
+<body>
+    <div class="portal-container">
+        <!-- Header -->
+        <header class="portal-header">
+            <div class="header-left">
+                <div class="hamburger-menu" id="sidebarToggle">
+                    <span class="hamburger-icon">☰</span>
+                </div>
+                <span class="portal-title">Student Portal</span>
+                <div class="session-info">
+                    <span class="calendar-icon">📅</span>
+                    Academic Session : 202520262
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="profile-trigger" id="profileTrigger">
+                    <img src="../assets/profile/profile.jpg" alt="Profile" class="header-profile-img" onerror="this.src='../assets/dashboard/ic_account_circle_black_24dp.png'">
+                </div>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="dropdown-content">
+                        <div class="user-name profile-name">MOMEN AHMED MOHAMED MOHAMED ALI</div>
+                        <div class="user-email profile-email">ahmedmohamed.m@graduate.utm.my</div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="logout-btn" id="logoutBtn">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="portal-body">
+            <!-- Sidebar -->
+            <aside class="portal-sidebar" id="sidebar">
+                <nav class="sidebar-nav">
+                    <div class="nav-item" onclick="location.href='student-portal.html'">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </div>
+                    
+                    <div class="nav-group">
+                        <div class="group-label">MENU</div>
+                        
+                        <!-- Student Info -->
+                        <div class="nav-item has-submenu" data-target="student-info">
+                            <span class="nav-icon">👤</span>
+                            <span class="nav-text">Student Info</span>
+                            <span class="submenu-arrow">›</span>
+                        </div>
+                        <ul class="submenu" id="student-info">
+                            <li onclick="location.href='student-profile.html'">Personal Info</li>
+                        </ul>
+
+                        <!-- Academic Matters -->
+                        <div class="nav-item has-submenu active open" data-target="academic-matters">
+                            <span class="nav-icon">🎓</span>
+                            <span class="nav-text">Academic Matters</span>
+                            <span class="submenu-arrow">⌄</span>
+                        </div>
+                        <ul class="submenu show" id="academic-matters">
+                            <li onclick="location.href='academic.html'">Academic Background</li>
+                            <li class="has-inner-submenu open" data-target="slip-submenu">
+                                Slip <span class="submenu-arrow">⌄</span>
+                            </li>
+                            <ul class="inner-submenu show" id="slip-submenu">
+                                <li class="active-link" onclick="location.href='curriculum-structure.html'">Curriculum Structure</li>
+                                <li onclick="window.open('../course-transfer-slip/credit-transfer.pdf', '_blank')">Credit Transferred Slip</li>
+                                <li onclick="location.href='course-registration.html'">Course Registration Slip</li>
+                                <li onclick="location.href='examination.html'">Examination Slip</li>
+                                <li onclick="window.open('../assets/Grid%20list/Grid%20list.pdf', '_blank')">Grid Slip</li>
+                                <li>ExCEL</li>
+                            </ul>
+                        </ul>
+
+                        <!-- Timetable -->
+                        <div class="nav-item has-submenu" data-target="timetable">
+                            <span class="nav-icon">📅</span>
+                            <span class="nav-text">Timetable</span>
+                            <span class="submenu-arrow">›</span>
+                        </div>
+                        <ul class="submenu" id="timetable">
+                            <li>Personalize</li>
+                            <li>Find</li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="portal-main">
+                <div class="page-header-title">
+                    <span class="page-icon">📄</span>
+                    <h2>Curriculum Structure</h2>
+                </div>
+
+                <div class="curriculum-container-card">
+                    <div class="curriculum-header-info">
+                        <h3>Curriculum Structure</h3>
+                        <div class="credit-summary-badge">
+                            <div class="credit-value">44 / 135</div>
+                            <div class="credit-label">Course Credit (SKEMH)</div>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-accordion">
+                        <!-- Faculty Section -->
+                        <div class="accordion-section" id="faculty-section">
+                            <div class="section-header-row">
+                                <div class="left-info">
+                                    <span class="section-title">Faculty</span>
+                                    <span class="section-credit">0 / 0</span>
+                                </div>
+                                <div class="view-courses-box" onclick="toggleSection(this)">
+                                    <span>View Courses</span>
+                                    <span class="icon">+</span>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Semester</th>
+                                            <th>Course</th>
+                                            <th>Course Code</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="no-record">- Record Not Exists -</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Programme Section -->
+                        <div class="accordion-section" id="programme-section">
+                            <div class="section-header-row">
+                                <div class="left-info">
+                                    <span class="section-title">Programme</span>
+                                    <span class="section-credit">38 / 110</span>
+                                </div>
+                                <div class="view-courses-box" onclick="toggleSection(this)">
+                                    <span>View Courses</span>
+                                    <span class="icon">+</span>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Semester</th>
+                                            <th>Course</th>
+                                            <th>Course Code</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="no-record">- Record Not Exists -</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Elective Section -->
+                        <div class="accordion-section" id="elective-section">
+                            <div class="section-header-row">
+                                <div class="left-info">
+                                    <span class="section-title">Elective</span>
+                                    <span class="section-credit">0 / 9</span>
+                                </div>
+                                <div class="view-courses-box" onclick="toggleSection(this)">
+                                    <span>View Courses</span>
+                                    <span class="icon">+</span>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Semester</th>
+                                            <th>Course</th>
+                                            <th>Course Code</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="no-record">- Record Not Exists -</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- University Section -->
+                        <div class="accordion-section" id="university-section">
+                            <div class="section-header-row">
+                                <div class="left-info">
+                                    <span class="section-title">University</span>
+                                    <span class="section-credit">4 / 8</span>
+                                </div>
+                                <div class="view-courses-box" onclick="toggleSection(this)">
+                                    <span>View Courses</span>
+                                    <span class="icon">+</span>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Semester</th>
+                                            <th>Course</th>
+                                            <th>Course Code</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="no-record">- Record Not Exists -</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- English Section -->
+                        <div class="accordion-section" id="english-section">
+                            <div class="section-header-row">
+                                <div class="left-info">
+                                    <span class="section-title">English</span>
+                                    <span class="section-credit">0 / 6</span>
+                                </div>
+                                <div class="view-courses-box" onclick="toggleSection(this)">
+                                    <span>View Courses</span>
+                                    <span class="icon">+</span>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Semester</th>
+                                            <th>Course</th>
+                                            <th>Course Code</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="no-record">- Record Not Exists -</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Curriculum Section -->
+                        <div class="accordion-section" id="curriculum-sub-section">
+                            <div class="section-header-row">
+                                <div class="left-info">
+                                    <span class="section-title">Curriculum</span>
+                                    <span class="section-credit">2 / 2</span>
+                                </div>
+                                <div class="view-courses-box" onclick="toggleSection(this)">
+                                    <span>View Courses</span>
+                                    <span class="icon">+</span>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Semester</th>
+                                            <th>Course</th>
+                                            <th>Course Code</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="no-record">- Record Not Exists -</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Others Section -->
+                        <div class="accordion-section" id="others-section">
+                            <div class="section-header-row">
+                                <div class="left-info">
+                                    <span class="section-title">Others</span>
+                                    <span class="section-credit">0 / 0</span>
+                                </div>
+                                <div class="view-courses-box" onclick="toggleSection(this)">
+                                    <span>View Courses</span>
+                                    <span class="icon">+</span>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <table class="curriculum-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Semester</th>
+                                            <th>Course</th>
+                                            <th>Course Code</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="no-record">- Record Not Exists -</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <span>Copyright © UTMDigital 2025</span>
+                    <span>Privacy Policy · Terms & Conditions</span>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- Processing Modal (Hidden by Default) -->
+    <div id="processing-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Processing...</h3>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script src="../js/student-portal.js"></script>
+    <script src="../js/curriculum.js"></script>
+</body>
+</html>

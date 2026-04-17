@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="207 69 78 85" width="78pt" height="85pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.0.2 
+    <dc:date>2020-03-17 08:53:38 +0000</dc:date>
+  </metadata>
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffa35f"/>
+      <stop offset="1" stop-color="#e6ba31"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(245.6185 69) rotate(90) scale(84.346)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(244.96747 91) rotate(90) scale(16.543929)"/>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(244.92917 104.93979) rotate(90) scale(11.795208)"/>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient" gradientTransform="translate(266.56648 100.49744) rotate(90) scale(9.80381)"/>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g>
+      <title>Layer 1</title>
+      <path d="M 220.189 134.484 L 271.048 134.484 C 278.32 134.484 284.237 128.568 284.237 121.294 L 284.237 82.189 C 284.237 74.916 278.32 69 271.048 69 L 220.189 69 C 212.917 69 207 74.916 207 82.189 C 207 82.189 207 139.676 207 140.156 C 207 147.428 212.917 153.346 220.189 153.346 L 271.048 153.346 C 278.32 153.346 284.237 147.428 284.237 140.156 L 284.237 130.353 C 282.404 133.017 279.785 135.097 276.718 136.262 L 276.718 140.156 C 276.718 143.284 274.175 145.827 271.047 145.827 L 220.189 145.827 C 217.061 145.827 214.517 143.284 214.517 140.156 C 214.518 137.029 217.061 134.484 220.189 134.484 Z M 214.518 82.189 C 214.518 79.062 217.062 76.516 220.19 76.516 L 271.049 76.516 C 274.177 76.516 276.72 79.062 276.72 82.189 L 276.72 121.293 C 276.72 124.421 274.177 126.964 271.049 126.964 L 220.189 126.964 C 218.16 126.964 216.237 127.427 214.517 128.249 L 214.517 82.189 Z" fill="url(#Obj_Gradient)"/>
+      <path d="M 244.92917 91 L 222.8706 99.27196 L 224.09607 99.73152 L 245.00576 107.54393 L 264.3836 100.26766 L 267.06433 99.27196 Z" fill="url(#Obj_Gradient_2)"/>
+      <path d="M 231.6787 105.01638 L 231.6787 107.00778 L 231.6787 111.90969 C 231.6787 114.59042 237.5763 116.735 244.92917 116.735 C 249.90767 116.735 254.19683 115.7393 256.4946 114.28405 C 257.5669 113.59472 258.17963 112.7522 258.17963 111.90969 L 258.17963 104.93979 L 244.92917 109.91829 Z" fill="url(#Obj_Gradient_3)"/>
+      <path d="M 266.98774 100.49744 L 266.06863 100.80381 L 265.76226 103.25476 L 264.76657 110.30125 L 266.68137 110.30125 L 268.3664 110.30125 Z" fill="url(#Obj_Gradient_4)"/>
+    </g>
+  </g>
+</svg>

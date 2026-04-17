@@ -1,13 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - UTM Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="login-card">
+            <header>
+                <h1>Sign In</h1>
+                <img src="assets/signin/myutm_logo4.png" alt="UTM Portal Logo" class="logo">
+            </header>
+            <hr class="divider">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="utmid">UTMID</label>
+                    <input type="text" id="utmid" name="utmid" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-footer">
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                    <button type="submit" class="login-btn">Login</button>
+                </div>
+            </form>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-left">
+                Copyright © 2025 Universiti Teknologi Malaysia
+            </div>
+            <div class="footer-right">
+                <a href="#">Privacy Policy</a> · <a href="#">Terms & Conditions</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
 </html>
-

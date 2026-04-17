@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - UTM Portal Clone</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Side Red Button -->
+    <button class="side-red-btn">previous version</button>
+
+    <div class="home-wrapper">
+        <!-- Hero Header Section -->
+        <header class="home-header">
+            <div class="header-top">
+                <div class="header-left">
+                    <img src="assets/home/myutm_logo_white.png" alt="myUTM Portal" class="home-logo">
+                </div>
+                <div class="header-right">
+                    <div class="header-icons">
+                        <div class="grid-container">
+                            <div class="grid-icon-custom" id="gridIcon">
+                                <span class="sq light"></span>
+                                <span class="sq dark"></span>
+                                <span class="sq dark"></span>
+                                <span class="sq light"></span>
+                            </div>
+                            <!-- Dashboard Popup -->
+                            <div class="dashboard-popup" id="dashboardPopup">
+                                <div class="dashboard-grid">
+                                    <div class="db-card">
+                                        <img src="assets/home/fin_status.svg" alt="" class="db-svg">
+                                        <span class="db-value" id="dbFinancial">RM 8,656.00</span>
+                                        <span class="db-label">Financial Status</span>
+                                    </div>
+                                    <div class="db-card">
+                                        <img src="assets/home/library_fine.svg" alt="" class="db-svg">
+                                        <span class="db-value" id="dbLibrary">RM 0.00</span>
+                                        <span class="db-label">Library Fine</span>
+                                    </div>
+                                    <div class="db-card">
+                                        <img src="assets/home/academic.svg" alt="" class="db-svg">
+                                        <span class="db-value" id="dbSemester">202520262</span>
+                                        <span class="db-label">Semester</span>
+                                    </div>
+                                    <div class="db-card">
+                                        <img src="assets/home/currstructure.svg" alt="" class="db-svg">
+                                        <span class="db-value" id="dbCredit">44/135</span>
+                                        <span class="db-label">Credit Counted</span>
+                                    </div>
+                                    <div class="db-card">
+                                        <img src="assets/home/activity.svg" alt="" class="db-svg">
+                                        <span class="db-value" id="dbActivity">25</span>
+                                        <span class="db-label">Activity</span>
+                                    </div>
+                                    <div class="db-card">
+                                        <img src="assets/home/achievement.svg" alt="" class="db-svg">
+                                        <span class="db-value" id="dbAward">0</span>
+                                        <span class="db-label">Award</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-container">
+                            <img src="assets/profile/profile.jpg" alt="Profile" class="profile-thumb" id="profileThumb">
+                            <!-- Profile Dropdown -->
+                            <div class="profile-dropdown" id="profileDropdown">
+                                <div class="dropdown-header">
+                                    <img src="assets/profile/profile.jpg" alt="Profile Large" class="profile-large">
+                                    <div class="user-info">
+                                        <h4 class="profile-name">MOMEN AHMED MOHAMED MOHAMED ALI</h4>
+                                        <p class="user-role">Student</p>
+                                        <p class="user-email profile-email">ahmedmohamed.m@graduate.utm.my</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-items">
+                                    <a href="#" class="dropdown-item" id="profileLink">
+                                        <span class="item-icon">👤</span>
+                                        <span>Profile</span>
+                                    </a>
+                                    <a href="#" class="dropdown-item" id="logoutBtn">
+                                        <span class="item-icon">↪️</span>
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-hero-content">
+                <div class="header-center">
+                    <div class="search-container">
+                        <input type="text" placeholder="Find systems or modules...">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                </div>
+
+                <!-- Quick Access Icons (Centered under Search) -->
+                <div class="quick-access">
+                    <div class="access-card">
+                        <a href="pages/academic.html"><img src="assets/home/academic.svg" alt="Student Portal"></a>
+                        <span>Student Portal</span>
+                    </div>
+                    <div class="access-card yellow">
+                        <img src="assets/home/academic.svg" alt="UTMACAD">
+                        <span>UTMACAD</span>
+                    </div>
+                    <div class="access-card">
+                        <img src="assets/home/academic.svg" alt="E-Learning">
+                        <span>E-Learning</span>
+                    </div>
+                    <div class="access-card">
+                        <img src="assets/home/academic.svg" alt="Course Registration">
+                        <span>Course Registration</span>
+                    </div>
+                    <div class="access-card">
+                        <img src="assets/home/activity.svg" alt="Activity">
+                        <span>Activity</span>
+                    </div>
+                    <div class="access-card green">
+                        <img src="assets/home/academic.svg" alt="ePalakat 2.0">
+                        <span>ePalakat 2.0</span>
+                    </div>
+                    <div class="access-card blue">
+                        <img src="assets/home/achievement.svg" alt="UTMFundraising">
+                        <span>UTMFundraising</span>
+                    </div>
+                    <div class="access-card dark">
+                        <img src="assets/home/academic.svg" alt="ICT Services">
+                        <span>ICT Services</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="home-main">
+            <!-- Content Grid -->
+            <div class="content-grid-main">
+                <!-- LEFT COLUMN: Systems & Apps -->
+                <div class="grid-col-left">
+                    <aside class="sidebar-card">
+                        <h3>Systems & Apps</h3>
+                        <p class="subtitle">List by category</p>
+                        
+                        <div class="collapsible-menu">
+                            <div class="menu-item active">
+                                <div class="menu-header" data-target="academic-list">
+                                    <img src="assets/home/academic.svg" alt="" class="menu-icon">
+                                    <span>Academic</span>
+                                    <span class="arrow">⌄</span>
+                                </div>
+                                <ul id="academic-list" class="menu-content show">
+                                    <li>Course Registration</li>
+                                    <li>Course Registration New</li>
+                                    <li>E-Learning</li>
+                                    <li>ePortfolio</li>
+                                    <a href="pages/academic.html"><li>Student Portal</li></a>
+                                    <li>Academic Award</li>
+                                    <li>ODL</li>
+                                    <li>MOOCs</li>
+                                    <li>OCW</li>
+                                    <li>E-Prints</li>
+                                    <li>UTMSAT</li>
+                                    <li>APEL.C</li>
+                                    <li>UTMLab</li>
+                                </ul>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-header" data-target="digital-list">
+                                    <img src="assets/home/digital_exp.svg" alt="" class="menu-icon">
+                                    <span>Digital Experience</span>
+                                    <span class="arrow">⌄</span>
+                                </div>
+                                <ul id="digital-list" class="menu-content">
+                                    <li>VRMS v2</li>
+                                    <li>ICT Services</li>
+                                    <li>Software Centre</li>
+                                    <li>Ez Proxy Library</li>
+                                    <li>UTM Blossom</li>
+                                    <li>Staff Directory</li>
+                                    <li>Faculty & School</li>
+                                    <li>Achievements</li>
+                                    <li>SPS</li>
+                                    <li>Bursary</li>
+                                    <li>E-Candidates</li>
+                                    <li>PayHub</li>
+                                    <li>UTMFundraising</li>
+                                </ul>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-header" data-target="campus-list">
+                                    <img src="assets/home/activity.svg" alt="" class="menu-icon">
+                                    <span>Campus Life</span>
+                                    <span class="arrow">⌄</span>
+                                </div>
+                                <ul id="campus-list" class="menu-content">
+                                    <li>Activity</li>
+                                    <li>Community Trans</li>
+                                    <li>UTMi Programs</li>
+                                    <li>JoC</li>
+                                    <li>Policy and Legislative</li>
+                                    <li>Admission</li>
+                                    <li>Bantuan Zakat</li>
+                                    <li>Scholarship</li>
+                                    <li>International Apps</li>
+                                    <li>Digital Care</li>
+                                    <li>PsyCare</li>
+                                </ul>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-header" data-target="quick-list">
+                                    <img src="assets/home/link.svg" alt="" class="menu-icon">
+                                    <span>Quick Links</span>
+                                    <span class="arrow">⌄</span>
+                                </div>
+                                <ul id="quick-list" class="menu-content">
+                                    <li>UTM Mail</li>
+                                    <li>Health Declaration</li>
+                                    <li>Kad Prihatin Siswa</li>
+                                    <li>PayHub</li>
+                                    <li>B40 Data Plan</li>
+                                    <li>Central UserID</li>
+                                    <li>Student Movement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- MIDDLE COLUMN: News, Events, Academic, Form, Finance -->
+                <div class="grid-col-middle">
+                    <div class="card news-card">
+                        <div class="card-header">
+                            <h3>News</h3>
+                            <span class="subtitle">Latest news</span>
+                            <a href="#" class="more-link">more..</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="assets/home/UTM_0824-551x367.jpg" alt="News Image" class="news-img">
+                            <p class="news-date">10 Apr 2026, NexScholar pacu ekosistem penyelidikan pintar UTM selaras aspirasi UTM ASCEND 2030</p>
+                        </div>
+                    </div>
+                    <div class="card events-card">
+                        <div class="card-header">
+                            <h3>Events</h3>
+                            <span class="subtitle">Latest events</span>
+                            <a href="#" class="more-link">more..</a>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">14</span>
+                                <span class="month">Apr</span>
+                            </div>
+                            <div class="event-info">
+                                <p>UTMPearl 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card list-card">
+                        <h3>Academic & Circular</h3>
+                        <ol>
+                            <li>Latest Academic Circular</li>
+                            <li>Diploma Calendar</li>
+                            <li>Bachelor Degree & PG Calendar</li>
+                            <li>UTMSpace Calendar</li>
+                        </ol>
+                    </div>
+                    <div class="card list-card">
+                        <h3>Form</h3>
+                        <ol>
+                            <li>Kemudahan Perubatan Staf - Bahagian Pengurusan Organisasi, Pendaftar</li>
+                            <li>Perkhidmatan Mel Universiti</li>
+                            <li>Borang Perubatan</li>
+                        </ol>
+                    </div>
+                    <div class="card list-card">
+                        <h3>Finance</h3>
+                        <ol>
+                            <li>Pemakaian Kaedah-Kaedah Universiti Teknologi Malaysia (Kewangan Pelajar)</li>
+                            <li>Enforcement of Universiti Teknologi Malaysia Rules (Student Financial)</li>
+                            <li>Bursar Student Financial Section site: Department of The Bursar (google.com)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Timetable, Charity Slider, Bottom Slider -->
+                <div class="grid-col-right">
+                    <div class="card timetable-card">
+                        <div class="card-header">
+                            <h3>Timetable</h3>
+                            <span class="subtitle">Today's schedule</span>
+                        </div>
+                        <div class="card-body empty"></div>
+                    </div>
+                    <div class="card charity-card">
+                        <div class="card-header">
+                            <h3>Charity</h3>
+                            <a href="#" class="more-link-header">more..</a>
+                        </div>
+                        <div class="slider-container charity-slider">
+                            <div class="slider-track" id="charitySlider">
+                                <img src="assets/home/Image.jpg" alt="Charity 1">
+                                <img src="assets/home/load_weekend.jpg" alt="Charity 2">
+                                <img src="assets/home/eyba0MmojyjYr31b3WFVZTOBP0HWGx.jpg" alt="Charity 3">
+                                <img src="assets/home/digitalfile.jpg" alt="Charity 4">
+                                <img src="assets/home/digitalfile (1).jpg" alt="Charity 5">
+                            </div>
+                            <button class="slider-arrow prev" id="charityPrev">&#10094;</button>
+                            <button class="slider-arrow next" id="charityNext">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="slider-container bottom-slider">
+                        <div class="slider-track" id="bottomSlider">
+                            <img src="assets/home/myutm_banner_stairs.jpg" alt="Banner 1">
+                            <img src="assets/home/CtXYQvPVYMwYl6nVkJEe1HRpmwqoAR.jpg" alt="Banner 2">
+                        </div>
+                        <button class="slider-arrow prev" id="bottomPrev">&#10094;</button>
+                        <button class="slider-arrow next" id="bottomNext">&#10095;</button>
+                    </div>
+                </div>
+
+                <!-- FAR RIGHT: Eid Image -->
+                <div class="grid-col-far-right">
+                    <div class="card eid-card-tall">
+                        <img src="assets/home/L2MroUtW0XY61LrVOcXaMWg4qHrKO9.png" alt="Eid Mubarak" class="eid-static-img">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="home-footer">
+            <div class="footer-left">2024 © Universiti Teknologi Malaysia</div>
+            <div class="footer-center">
+                <span class="dot yellow"></span> Human Resource
+                <span class="dot red"></span> Academic
+                <span class="dot blue"></span> Finance
+                <span class="dot purple"></span> Research
+                <span class="dot light-blue"></span> Support
+                <span class="dot black"></span> Others
+            </div>
+            <div class="footer-right">Support</div>
+        </footer>
+
+        <!-- Floating Feedback Button -->
+        <button id="feedbackBtn" class="feedback-fab">
+            <span class="emoji">😊</span>
+        </button>
+
+        <!-- Scroll To Top Button -->
+        <button id="scrollTopBtn" class="scroll-top-btn">
+            <span class="arrow-up">↑</span>
+        </button>
+
+        <!-- Feedback Popup Modal -->
+        <div id="feedbackModal" class="modal-overlay">
+            <div class="modal-content">
+                <h2>Rate Us!</h2>
+                <div class="modal-subtitle">
+                    <p>How <strong>satisfied</strong> are you with this site?</p>
+                    <p class="malay-text">Apakah <em>tahap kepuasan</em> anda tentang laman web ini?</p>
+                </div>
+                <div class="emoji-options">
+                    <button class="emoji-btn" data-value="sad">😢</button>
+                    <button class="emoji-btn" data-value="neutral">😐</button>
+                    <button class="emoji-btn" data-value="happy">😊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Slip - UTM Clone</title>
+    <link rel="stylesheet" href="../css/student-portal.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="portal-container">
+        <!-- Header -->
+        <header class="portal-header">
+            <div class="header-left">
+                <div class="hamburger-menu" id="sidebarToggle">
+                    <span class="hamburger-icon">☰</span>
+                </div>
+                <span class="portal-title">Student Portal</span>
+                <div class="session-info">
+                    <span class="calendar-icon">📅</span>
+                    Academic Session : 202520262
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="profile-trigger" id="profileTrigger">
+                    <img src="../assets/profile/profile.jpg" alt="Profile" class="header-profile-img" onerror="this.src='../assets/dashboard/ic_account_circle_black_24dp.png'">
+                </div>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="dropdown-content">
+                        <div class="user-name profile-name">MOMEN AHMED MOHAMED MOHAMED ALI</div>
+                        <div class="user-email profile-email">ahmedmohamed.m@graduate.utm.my</div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="logout-btn" id="logoutBtn">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="portal-body">
+            <!-- Sidebar -->
+            <aside class="portal-sidebar" id="sidebar">
+                <nav class="sidebar-nav">
+                    <div class="nav-item" onclick="location.href='student-portal.html'">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </div>
+                    
+                    <div class="nav-group">
+                        <div class="group-label">MENU</div>
+                        
+                        <!-- Student Info -->
+                        <div class="nav-item has-submenu" data-target="student-info">
+                            <span class="nav-icon">👤</span>
+                            <span class="nav-text">Student Info</span>
+                            <span class="submenu-arrow">›</span>
+                        </div>
+                        <ul class="submenu" id="student-info">
+                            <li onclick="location.href='student-profile.html'">Personal Info</li>
+                        </ul>
+
+                        <!-- Academic Matters -->
+                        <div class="nav-item has-submenu active open" data-target="academic-matters">
+                            <span class="nav-icon">🎓</span>
+                            <span class="nav-text">Academic Matters</span>
+                            <span class="submenu-arrow">⌄</span>
+                        </div>
+                        <ul class="submenu show" id="academic-matters">
+                            <li onclick="location.href='academic.html'">Academic Background</li>
+                            <li class="has-inner-submenu open" data-target="slip-submenu">
+                                Slip <span class="submenu-arrow">⌄</span>
+                            </li>
+                            <ul class="inner-submenu show" id="slip-submenu">
+                                <li onclick="location.href='curriculum-structure.html'">Curriculum Structure</li>
+                                <li onclick="window.open('../course-transfer-slip/credit-transfer.pdf', '_blank')">Credit Transferred Slip</li>
+                                <li onclick="location.href='course-registration.html'">Course Registration Slip</li>
+                                <li class="active-link" onclick="location.href='examination.html'">Examination Slip</li>
+                                <li onclick="window.open('../assets/Grid%20list/Grid%20list.pdf', '_blank')">Grid Slip</li>
+                                <li>ExCEL</li>
+                            </ul>
+                        </ul>
+
+                        <!-- Timetable -->
+                        <div class="nav-item has-submenu" data-target="timetable">
+                            <span class="nav-icon">📅</span>
+                            <span class="nav-text">Timetable</span>
+                            <span class="submenu-arrow">›</span>
+                        </div>
+                        <ul class="submenu" id="timetable">
+                            <li>Personalize</li>
+                            <li>Find</li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="portal-main">
+                <div class="page-header-title" style="display: flex; align-items: center; gap: 8px; margin-bottom: 25px;">
+                    <span class="page-icon" style="font-size: 1.2rem;">📝</span>
+                    <h2 style="margin: 0; font-size: 1.1rem; font-weight: 600; color: #444;">Examination Slip</h2>
+                </div>
+
+                <!-- STUDENT CARD -->
+                <div class="student-card">
+                    <img src="../assets/profile/profile.jpg" alt="Student Profile" class="profile-big-img" onerror="this.src='../assets/dashboard/ic_account_circle_black_24dp.png'">
+                    
+                    <div class="student-info">
+                        <h2>MOMEN AHMED MOHAMED MOHAMED ALI</h2>
+                        <p>Bachelor Of Engineering (Electrical-Mechatronics) With Honours</p>
+                    </div>
+
+                    <div class="student-data">
+                        <p><strong>A24KE4027</strong></p>
+                        <p><strong>1 / SKEMH</strong></p>
+                    </div>
+                </div>
+
+                <!-- STAT CARDS -->
+                <div class="cards">
+                    <div class="card purple">
+                        <h3>CGPA</h3>
+                        <h2>2.29</h2>
+                        <span>(202520261)</span>
+                    </div>
+
+                    <div class="card green">
+                        <h3>ACTIVITY</h3>
+                        <h2>27</h2>
+                    </div>
+
+                    <div class="card blue">
+                        <h3>AWARD</h3>
+                        <h2>-</h2>
+                    </div>
+                </div>
+
+                <!-- CHART BOX -->
+                <div class="chart-box">
+                    <h3>CGPA Summary</h3>
+                    <div id="chartContainer" style="width: 100%; height: 400px;"></div>
+                </div>
+
+                <footer class="footer">
+                    <span>Copyright © UTMDigital 2025</span>
+                    <span>Privacy Policy · Terms & Conditions</span>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- EXAMINATION MODAL -->
+    <div id="examModal" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:9999;"> 
+      <div class="modal-box" style="background:#fff; padding:30px; border-radius:10px; width:400px; text-align:center;"> 
+        <h3>Examination Result</h3> 
+    
+        <label style="display:block; margin:10px 0;">SEMESTER SESSION</label> 
+    
+        <select id="examSemester" style="width:100%; padding:10px; margin-bottom:20px;"> 
+          <option value="">--Please Select--</option> 
+          <option value="202520261">202520261</option> 
+          <option value="202420252">202420252</option> 
+          <option value="202420251">202420251</option> 
+        </select> 
+    
+        <div class="actions" style="display:flex; justify-content:center; gap:10px;"> 
+          <button id="examViewBtn" style="display:none; background:green; color:#fff; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;">View</button> 
+          <button id="examCancelBtn" style="background:none; border:1px solid red; color:red; padding:10px 20px; border-radius:5px; cursor:pointer;">Cancel</button> 
+        </div> 
+    
+      </div> 
+    </div>
+
+    <!-- Highcharts Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@10.3.3/highcharts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@10.3.3/modules/exporting.js"></script>
+
+    <script src="../js/student-portal.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const examModal = document.getElementById("examModal"); 
+            const examSelect = document.getElementById("examSemester"); 
+            const examView = document.getElementById("examViewBtn"); 
+            const examCancel = document.getElementById("examCancelBtn"); 
+            
+            if (examModal) { 
+                examModal.style.display = "flex"; 
+                
+                examSelect.onchange = function () { 
+                    examView.style.display = this.value ? "inline-block" : "none"; 
+                }; 
+                
+                examView.onclick = function () { 
+                    const val = examSelect.value; 
+                    if (!val) return; 
+                
+                    window.open(`../assets/examinationResult/${val}.pdf`, "_blank"); 
+                }; 
+                
+                examCancel.onclick = function () { 
+                    examModal.style.display = "none"; 
+                }; 
+            }
+        });
+    </script>
+</body>
+</html>

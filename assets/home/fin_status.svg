@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="52 46 103 104" width="103" height="104">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffa35f"/>
+      <stop offset="1" stop-color="#e6ba31"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(103.48962 63.050626) rotate(90) scale(17.702713)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(103.5 48.25) rotate(90) scale(99.5)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.3\n2021-12-05 01:00:46 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_110">
+        <g id="Group_111">
+          <g id="Graphic_122">
+            <rect x="123.44144" y="94.80772" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_121">
+            <rect x="101.3856" y="130.23383" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_120">
+            <rect x="101.3856" y="94.80772" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_119">
+            <rect x="101.3856" y="112.53111" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_118">
+            <rect x="123.44144" y="130.23383" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_117">
+            <rect x="79.32984" y="112.53111" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_116">
+            <rect x="123.44144" y="112.53111" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_115">
+            <path d="M 131.0283 63.050626 L 75.95094 63.050626 L 75.95094 80.75334 L 131.0283 80.75334 Z M 110.29917 74.057825 L 105.57295 74.057825 L 105.57295 78.61826 L 101.42705 78.61826 L 101.42705 74.057825 L 96.86669 74.057825 L 96.86669 69.74614 L 101.42705 69.74614 L 101.42705 65.185706 L 105.57295 65.185706 L 105.57295 69.74614 L 110.1333 69.74614 Z M 127.98111 74.057825 L 114.48644 74.057825 L 114.48644 69.74614 L 127.89823 69.74614 Z" fill="url(#Obj_Gradient)"/>
+          </g>
+          <g id="Graphic_114">
+            <path d="M 138.73957 48.25 L 68.26043 48.25 C 67.02897 48.25 65.84793 48.739256 64.97711 49.61 C 64.106286 50.48082 63.61711 51.66186 63.61711 52.89332 L 63.61711 143.10668 C 63.61711 144.33814 64.106286 145.51918 64.97711 146.39 C 65.84793 147.26074 67.02897 147.75 68.26043 147.75 L 138.73957 147.75 C 139.97103 147.75 141.15207 147.26074 142.02289 146.39 C 142.89371 145.51918 143.38289 144.33814 143.38289 143.10668 L 143.38289 52.89332 C 143.38289 51.66186 142.89371 50.48082 142.02289 49.61 C 141.15207 48.739256 139.97103 48.25 138.73957 48.25 Z M 87.87024 138.77423 L 75.018155 138.77423 L 75.018155 125.92214 L 87.87024 125.92214 Z M 87.87024 121.05083 L 75.018155 121.05083 L 75.018155 108.19875 L 87.87024 108.19875 Z M 87.87024 103.32736 L 75.018155 103.32736 L 75.018155 90.47535 L 87.87024 90.47535 Z M 109.926 138.77423 L 97.074 138.77423 L 97.074 125.92214 L 109.926 125.92214 Z M 109.926 121.05083 L 97.074 121.05083 L 97.074 108.19875 L 109.926 108.19875 Z M 109.926 103.32736 L 97.074 103.32736 L 97.074 90.47535 L 109.926 90.47535 Z M 131.98185 138.77423 L 119.12976 138.77423 L 119.12976 125.92214 L 131.98185 125.92214 Z M 131.98185 121.05083 L 119.12976 121.05083 L 119.12976 108.19875 L 131.98185 108.19875 Z M 131.98185 103.32736 L 119.12976 103.32736 L 119.12976 90.47535 L 131.98185 90.47535 Z M 135.36075 85.08571 L 71.63925 85.08571 L 71.63925 58.71826 L 135.36075 58.71826 Z" fill="url(#Obj_Gradient_2)"/>
+          </g>
+          <g id="Graphic_113">
+            <rect x="79.32984" y="130.23383" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+          <g id="Graphic_112">
+            <rect x="79.32984" y="94.80772" width="4.208019" height="4.208019" fill="#ffa35f"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

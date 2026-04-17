@@ -1,0 +1,227 @@
+/* Curriculum Structure Page Styles */
+
+.curriculum-container-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.curriculum-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.curriculum-header-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #8b0000;
+}
+
+.credit-summary-badge {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.credit-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #8b0000;
+    margin-bottom: 4px;
+}
+
+.credit-label {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 500;
+}
+
+/* Page Title Alignment */
+.page-header-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.page-header-title .page-icon {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.page-header-title h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Accordion Design - Full Width Rows */
+.curriculum-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-section {
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.accordion-section:last-child {
+    border-bottom: none;
+}
+
+.section-header-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.left-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 250px;
+}
+
+.section-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #555;
+    min-width: 100px;
+}
+
+.section-credit {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #333;
+    min-width: 80px;
+}
+
+/* View Courses Box - Full Width */
+.view-courses-box {
+    flex: 1; /* Take all available space */
+    background: #e9edf2;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.view-courses-box:hover {
+    background: #dce2e8;
+}
+
+.view-courses-box span {
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.view-courses-box .icon {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Content & Table Styles */
+.section-content {
+    display: none;
+    padding: 20px 0 20px 270px; /* Aligned with table starts */
+    background: #fff;
+    animation: slideDown 0.3s ease-out;
+}
+
+.accordion-section.active .section-content {
+    display: block;
+}
+
+.curriculum-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.curriculum-table th {
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+    border-bottom: 2px solid #edf2f9;
+}
+
+.curriculum-table td {
+    padding: 12px 15px;
+    font-size: 0.85rem;
+    color: #555;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.no-record {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 30px !important;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+    font-size: 13px;
+    padding: 30px 10px 20px;
+    margin-top: auto;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Processing Modal (Hidden) */
+.modal-overlay {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .section-content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .left-info {
+        min-width: 100%;
+    }
+    .view-courses-box {
+        width: 100%;
+    }
+}
